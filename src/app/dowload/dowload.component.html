@@ -1,0 +1,93 @@
+<div class="content" style="box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);">
+
+    <header>
+        <div class="imageheader">
+            <img src="../../../../assets/surM.png" alt="LE LLOG">
+            &nbsp;&nbsp;&nbsp;&nbsp;
+            <img src="../../../../assets/SurMe.png" alt="LE LLOG">
+
+        </div>
+    </header>
+
+    <div class="arra">
+        <hr>
+
+        <p>
+            Une nouvelle manière d’enregistrer les mesures
+        </p>
+
+    </div>
+</div>
+
+
+<div class="container">
+    <div class="controll">
+        <div class="slideshow-container">
+            <!-- Bouton Précédent -->
+            <button (click)="prevImage()" class="nav-button left-button">&lt;</button>
+        
+            <!-- Image affichée -->
+            <img [src]="images[currentImageIndex]" class="icon" alt="Slideshow Image">
+        
+            <!-- Bouton Suivant -->
+            <button (click)="nextImage()" class="nav-button right-button">&gt;</button>
+        </div>
+        
+
+        <div class="indicators">
+            <span *ngFor="let image of images; let i = index" [class.active]="i === currentImageIndex"
+                (click)="goToImage(i)">
+            </span>
+        </div>
+    </div>
+
+
+    <div class="form-container">
+
+
+        <div class="foote">
+            <p [routerLink]="['/bien']"> &nbsp;&nbsp;
+                <img src="../../assets/sur.png"> &nbsp;&nbsp;
+                INSCRIRE ATELIER &nbsp;&nbsp;
+            </p>
+            &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp;
+
+
+            <p> 
+                &nbsp;
+                <a href="../../assets/EXE/SurMesure.apk" download>
+                    <img src="../../assets/cl.png" alt="Télécharger l'application"> 
+                    &nbsp; TELECHARGER  &nbsp;
+                </a>
+            </p>
+            
+
+        </div>
+
+        <footer>
+            <div class="imge">
+
+                <a href="mailto:israelmaou@gmail.com" target="_blank">
+                    <img src="../../assets/Gm.png" class="ige">
+                </a>
+                &nbsp;&nbsp;
+                <a href="https://wa.me/91885839" target="_blank">
+                    <img src="../../assets/Wh.png" class="ige">
+                </a>
+                &nbsp;&nbsp;
+                <a href="https://wa.me/91885839" target="_blank">
+
+                    <img src="../../assets/Fa.png" class="ige">
+                </a>
+                &nbsp;&nbsp;
+                <a href="https://wa.me/91885839" target="_blank">
+
+                    <img src="../../assets/Lin.png" class="ige">
+                </a>
+            </div>
+            <pre></pre>
+            <p> <img src="../../assets/c.png" class="Copy">
+                Copyrights 2024 | ProgKIT </p>
+        </footer>
+    </div>
+</div>

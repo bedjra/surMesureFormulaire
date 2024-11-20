@@ -1,0 +1,208 @@
+/* Container styles */
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 0 auto;
+    max-width: 1500px;
+  }
+  
+  .acc {
+    color: #48C658;
+    padding-top: 10px;
+    cursor: pointer; 
+  
+  }
+  
+  
+  
+  .form-container {
+    width: 50%;
+    margin: auto;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 1px;
+    background-color: #f9f9f9;
+  }
+  
+  .form-group {
+    margin-bottom: 15px;
+  }
+  
+  .form-group label {
+    display: block;
+    font-weight: bold;
+    margin-bottom: 5px;
+  }
+  
+  .form-group input,
+  .form-group textarea {
+    width: 95%;
+    padding: 10px;
+    border: 1px solid #48C658;;
+    border-radius: 5px;
+    font-size: 16px;
+  }
+  
+  button[type="submit"] {
+    width: 30%;
+    padding: 10px;
+    background-color: #48C658;
+    margin-right: 30px;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-size: 18px;
+    cursor: pointer;
+  }
+  
+  
+  
+  footer {
+    margin-top: 50px;
+    text-align: center;
+    font-size: 14px;
+  }
+  
+  /* Style responsive pour les mobiles */
+  @media (max-width: 600px) {
+  
+    .form-container {
+      width: 90%;
+      padding: 5px;
+      background-color: #f9f9f9;
+    }
+  
+    button[type="submit"] {
+      font-size: 16px;
+      height: 40px;
+      width: 100px;
+    }
+  
+    footer {
+      
+      align-items: center;
+      font-size: 08px;
+    }
+  
+  }
+  
+  .etoile {
+    color: red;
+  }
+  
+  h4 {
+    font-size: 25px;
+  }
+  
+  .acc {
+    display: inline-flex;
+    align-items: center;
+    /* Aligns the image and text vertically center */
+  }
+  
+  .io {
+    cursor: pointer;
+    /* Adds a pointer cursor for the image */
+  }
+  
+  
+  /* Style de l'image */
+  .icon {
+    padding-top: -250px;
+    width: 1000px;
+    height: 250px;
+    margin-bottom: -1px;
+  }
+  
+  /* Ajustement de l'image pour les écrans plus petits */
+  @media (max-width: 600px) {
+    .icon {
+      width: 100%;
+      height: 130px;
+    }
+  }
+  
+  
+  
+  /* Overlay couvrant tout l'écran */
+  .loading-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    /* Fond semi-transparent */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1050;
+  }
+  
+  
+  .loading-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    /* Fond semi-transparent */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 2000;
+    /* Assurez-vous qu'il est au-dessus du modal */
+  }
+  
+  .spinner {
+    width: 50px;
+    height: 50px;
+    border: 5px solid #f3f3f3;
+    border-top: 5px solid #48C658;
+    ;
+    border-radius: 50%;
+    animation: spin 1s linear infinite;
+  }
+  
+  @keyframes spin {
+    0% {
+      transform: rotate(0deg);
+    }
+  
+    100% {
+      transform: rotate(360deg);
+    }
+  }
+  
+  
+  
+  
+  /* Mobile specific styling */
+  @media (max-width: 600px) {
+    .container {
+      padding: 15px;
+    }
+  
+    .form-group input,
+    .form-group textarea,
+    button[type="submit"] {
+      font-size: 16px;
+    }
+  }
+  
+  footer p {
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    display: flex
+    /* Centre verticalement */
+  }
+  
+  .ion {
+    margin-right: 8px;
+    /* Optionnel : espace entre l'image et le texte */
+    height: 18px;
+    /* Ajuste la taille de l'image si nécessaire */
+  }
